@@ -6,6 +6,7 @@
     var GA_ID = 'G-35S6SE6XDN';
     var isLocalDev = ['localhost', '127.0.0.1', ''].includes(location.hostname);
     if (isLocalDev) return;
+    try { if (/[?&]no_ga=0/.test(location.search)) localStorage.removeItem('no_ga'); if (/[?&]no_ga=1/.test(location.search)) localStorage.setItem('no_ga', '1'); if (localStorage.getItem('no_ga') === '1') return; } catch (e) {}
     var gaQ = new URLSearchParams(location.search); if (gaQ.get('obs') === '1' || gaQ.get('no_ga') === '1') return;
     var s = document.createElement('script');
     s.async = true;
