@@ -143,6 +143,15 @@
   <h1>画像に透かし(ウォーターマーク)を入れる</h1>
   <p>イラストや写真に、名前・©・「無断転載禁止」などの透かしを入れて保存できます。画像は送信されません・登録不要・スマホOK</p>
 </header>
+<!--ANSHIN_STRIP_START-->
+<style>.anshin-strip{max-width:880px;margin:10px auto 0;padding:0 16px;display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.8rem;line-height:1.5}.anshin-strip span{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border:1px solid rgba(20,120,90,.45);border-radius:999px;background:rgba(20,120,90,.07)}.anshin-strip a{color:inherit}.anshin{max-width:880px;margin:18px auto;padding:14px 18px;border:1px solid rgba(20,120,90,.45);border-radius:10px;background:rgba(20,120,90,.05);font-size:.86rem;line-height:1.7}.anshin h2{font-size:1rem;margin:0 0 6px}.anshin ul{margin:0;padding-left:1.2em}.anshin li{margin:3px 0}.anshin a{color:inherit}@media print{.anshin,.anshin-strip{display:none!important}}</style>
+<div class="anshin-strip" aria-label="安心して使えるポイント">
+  <span>✓ 入力内容は外部に送信しません</span>
+  <span>✓ 登録・ログイン不要</span>
+  <span>✓ <a href="https://github.com/uuhai0625/watermark-maker" target="_blank" rel="noopener">ソースコード公開中</a></span>
+  <a href="#anshin">くわしく</a>
+</div>
+<!--ANSHIN_STRIP_END-->
 
 <main>
 <div class="layout">
@@ -313,6 +322,22 @@
 </main>
 
 <button type="button" id="miniPv" class="mini hidden" aria-label="プレビューを見る"><canvas id="miniCv" width="1" height="1"></canvas><span>プレビュー</span></button>
+
+<!--ANSHIN_START-->
+<section class="anshin" id="anshin">
+  <h2>安心して使えるように</h2>
+  <ul>
+    <li>入力した文字・数字・読み込んだファイル(画像など)は、<strong>このブラウザの中だけで処理</strong>しています。当方のサーバーに送ったり保存したりはしていません(そもそもデータを受け取るサーバーを持っていません)。</li>
+    <li>画像などのファイルは、選んだ時点でアップロードされることはありません。パソコンやスマホの中で読み込んで処理します。</li>
+    <li>保存・自動保存されるデータも、このブラウザの中(localStorage)だけに残ります。共用のパソコンでは使い終わったら消してください(ブラウザのサイトデータを消すと消えます)。</li>
+    <li>会員登録・ログイン・メールアドレスの入力は一切ありません。</li>
+    <li>アクセス解析(Google Analytics)で送るのは、ページを見たことと、ボタン操作の種類(例: 画像を保存した)だけです。入力した内容は含みません。</li>
+    <li>ページを開いたあとは、ネットを切った状態でも動きます。気になる方はオフラインにして使ってみてください。</li>
+    <li>ソースコードは<a href="https://github.com/uuhai0625/watermark-maker" target="_blank" rel="noopener">GitHubで公開</a>しているので、どんな処理をしているか誰でも確認できます。</li>
+    <li>作っている人: ウーハイ(個人開発)。<a href="https://uuhai0625.github.io/" target="_blank" rel="noopener">ほかのツール・活動</a>/<a href="https://x.com/uuhai0625" target="_blank" rel="noopener">X(@uuhai0625)</a></li>
+  </ul>
+</section>
+<!--ANSHIN_END-->
 
 <footer>
   <p id="privacyNote">本ツールは完全にブラウザ内で動作し、画像はどこにも送信されません。</p>
