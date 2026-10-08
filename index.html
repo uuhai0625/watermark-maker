@@ -136,6 +136,7 @@
     section.card { padding: 16px 14px; }
   }
 </style>
+<!--ANSHIN_CSS_START--><style>:root{--anshin-w:1008px;--anshin-pad:16px}.anshin-strip,.anshin{box-sizing:border-box;width:min(var(--anshin-w),calc(100% - 2 * var(--anshin-pad)));margin-left:auto;margin-right:auto}.anshin-strip{list-style:none;margin-top:10px;margin-bottom:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.8rem;line-height:1.5}.anshin-strip li{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border:1px solid rgba(20,120,90,.45);border-radius:999px;background:rgba(20,120,90,.07)}.anshin-strip li.anshin-more{border:0;background:none;padding:3px 2px}.anshin-strip a,.anshin a{color:inherit}.anshin{margin-top:18px;margin-bottom:18px;padding:14px 18px;border:1px solid rgba(20,120,90,.45);border-radius:10px;background:rgba(20,120,90,.05);font-size:.86rem;line-height:1.7}.anshin h2{font-size:1rem;margin:0 0 6px}.anshin p{margin:0 0 6px}.anshin ul{margin:0;padding-left:1.2em}.anshin li{margin:3px 0}.anshin details{margin-top:6px}.anshin summary{cursor:pointer;font-weight:bold}.anshin .anshin-meta{margin:8px 0 0;font-size:.8rem;opacity:.85}@media print{.anshin,.anshin-strip{display:none!important}}</style><!--ANSHIN_CSS_END-->
 </head>
 <body>
 
@@ -144,13 +145,12 @@
   <p>イラストや写真に、名前・©・「無断転載禁止」などの透かしを入れて保存できます。画像は送信されません・登録不要・スマホOK</p>
 </header>
 <!--ANSHIN_STRIP_START-->
-<style>.anshin-strip{max-width:880px;margin:10px auto 0;padding:0 16px;display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.8rem;line-height:1.5}.anshin-strip span{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border:1px solid rgba(20,120,90,.45);border-radius:999px;background:rgba(20,120,90,.07)}.anshin-strip a{color:inherit}.anshin{max-width:880px;margin:18px auto;padding:14px 18px;border:1px solid rgba(20,120,90,.45);border-radius:10px;background:rgba(20,120,90,.05);font-size:.86rem;line-height:1.7}.anshin h2{font-size:1rem;margin:0 0 6px}.anshin ul{margin:0;padding-left:1.2em}.anshin li{margin:3px 0}.anshin a{color:inherit}@media print{.anshin,.anshin-strip{display:none!important}}</style>
-<div class="anshin-strip" aria-label="安心して使えるポイント">
-  <span>✓ 入力内容は外部に送信しません</span>
-  <span>✓ 登録・ログイン不要</span>
-  <span>✓ <a href="https://github.com/uuhai0625/watermark-maker" target="_blank" rel="noopener">ソースコード公開中</a></span>
-  <a href="#anshin">くわしく</a>
-</div>
+<ul class="anshin-strip" aria-label="データの扱い">
+  <li><span aria-hidden="true">✓</span> 入力内容はこの端末の中だけで処理</li>
+  <li><span aria-hidden="true">✓</span> 登録・ログイン不要</li>
+  <li><span aria-hidden="true">✓</span> 仕組みを公開中</li>
+  <li class="anshin-more"><a href="#anshin">データの扱いをくわしく</a></li>
+</ul>
 <!--ANSHIN_STRIP_END-->
 
 <main>
@@ -324,18 +324,24 @@
 <button type="button" id="miniPv" class="mini hidden" aria-label="プレビューを見る"><canvas id="miniCv" width="1" height="1"></canvas><span>プレビュー</span></button>
 
 <!--ANSHIN_START-->
-<section class="anshin" id="anshin">
-  <h2>安心して使えるように</h2>
+<section class="anshin" id="anshin" aria-labelledby="anshin-title">
+  <h2 id="anshin-title">データの扱いについて</h2>
+  <p>このページには、入力した内容を受け取る仕組みがありません。文字も画像も、あなたのスマホやパソコンの中だけで処理されます。</p>
   <ul>
-    <li>入力した文字・数字・読み込んだファイル(画像など)は、<strong>このブラウザの中だけで処理</strong>しています。当方のサーバーに送ったり保存したりはしていません(そもそもデータを受け取るサーバーを持っていません)。</li>
-    <li>画像などのファイルは、選んだ時点でアップロードされることはありません。パソコンやスマホの中で読み込んで処理します。</li>
-    <li>保存・自動保存されるデータも、このブラウザの中(localStorage)だけに残ります。共用のパソコンでは使い終わったら消してください(ブラウザのサイトデータを消すと消えます)。</li>
-    <li>会員登録・ログイン・メールアドレスの入力は一切ありません。</li>
-    <li>アクセス解析(Google Analytics)で送るのは、ページを見たことと、ボタン操作の種類(例: 画像を保存した)だけです。入力した内容は含みません。</li>
-    <li>ページを開いたあとは、ネットを切った状態でも動きます。気になる方はオフラインにして使ってみてください。</li>
-    <li>ソースコードは<a href="https://github.com/uuhai0625/watermark-maker" target="_blank" rel="noopener">GitHubで公開</a>しているので、どんな処理をしているか誰でも確認できます。</li>
-    <li>作っている人: ウーハイ(個人開発)。<a href="https://uuhai0625.github.io/" target="_blank" rel="noopener">ほかのツール・活動</a>/<a href="https://x.com/uuhai0625" target="_blank" rel="noopener">X(@uuhai0625)</a></li>
+    <li>画像などのファイルを選んでも、アップロードはされません。端末の中で読み込んで処理します。</li>
+    <li>会員登録・ログイン・メールアドレスの入力はありません。</li>
+    <li>自分で確かめたい方へ: ページを開いたあと機内モードにしても、そのまま使えます。</li>
   </ul>
+  <details>
+    <summary>もっとくわしく(保存・アクセス解析・公開について)</summary>
+    <ul>
+      <li>保存されるデータは、この端末のこのブラウザの中にだけ残ります(localStorage)。共用のパソコンでは使い終わったら消してください。</li>
+      <li>アクセス解析(Google Analytics)のため、見たページのURL・参照元・端末やブラウザの種類・おおよその地域(IPアドレスから推定)・Cookieの識別子・BOOTHへのリンクのクリック・どのボタンを押したか(回数や選んだ設定を含む)がGoogleに送られます。目的は利用状況の把握です。入力した文字や画像は送りません。(<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">Googleによるデータの使用</a>/<a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener">計測を止めるアドオン</a>。止めてもツールはそのまま使えます)</li>
+      <li>このツールの結果や作成物は目安です。入稿・契約・販売などの前には、印刷所や公式の情報でご確認ください。</li>
+      <li>処理の中身はすべて公開しています(詳しい方向け: <a href="https://github.com/uuhai0625/watermark-maker" target="_blank" rel="noopener">GitHub</a>)。</li>
+    </ul>
+  </details>
+  <p class="anshin-meta">作っている人: ウーハイ(個人開発)/不具合・ご質問は<a href="https://x.com/uuhai0625" target="_blank" rel="noopener">X(@uuhai0625)</a>へ/<a href="https://uuhai0625.github.io/" target="_blank" rel="noopener">ほかのツール</a>/この説明の更新日: 2026-10-09</p>
 </section>
 <!--ANSHIN_END-->
 
