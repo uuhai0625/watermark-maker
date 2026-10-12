@@ -137,7 +137,7 @@
   }
 </style>
 <!--ANSHIN_CSS_START--><style>:root{--anshin-w:1008px;--anshin-pad:16px}.anshin-strip,.anshin{box-sizing:border-box;width:min(var(--anshin-w),calc(100% - 2 * var(--anshin-pad)));margin-left:auto;margin-right:auto}.anshin-strip{list-style:none;margin-top:10px;margin-bottom:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:.8rem;line-height:1.5}.anshin-strip li{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border:1px solid rgba(20,120,90,.45);border-radius:999px;background:rgba(20,120,90,.07)}.anshin-strip li.anshin-more{border:0;background:none;padding:3px 2px}.anshin-strip a,.anshin a{color:inherit}.anshin{margin-top:18px;margin-bottom:18px;padding:14px 18px;border:1px solid rgba(20,120,90,.45);border-radius:10px;background:rgba(20,120,90,.05);font-size:.86rem;line-height:1.7}.anshin h2{font-size:1rem;margin:0 0 6px}.anshin p{margin:0 0 6px}.anshin ul{margin:0;padding-left:1.2em}.anshin li{margin:3px 0}.anshin details{margin-top:6px}.anshin summary{cursor:pointer;font-weight:bold}.anshin .anshin-meta{margin:8px 0 0;font-size:.8rem;opacity:.85}@media print{.anshin,.anshin-strip{display:none!important}}</style><!--ANSHIN_CSS_END-->
-<!--UPSELL_CSS_START--><style>.upsell-top{box-sizing:border-box;width:min(var(--anshin-w,880px),calc(100% - 2 * var(--anshin-pad,16px)));margin:12px auto 0;font-size:.85rem;line-height:1.6}.upsell-top a{color:inherit}.upsell-assure{list-style:none;margin:12px 0 10px;padding:0;display:flex;flex-wrap:wrap;gap:6px 8px;font-size:.8rem;line-height:1.5}.upsell-assure li{padding:3px 10px;border:1px solid rgba(20,120,90,.45);border-radius:12px;background:rgba(20,120,90,.06)}.upsell-terms{margin:8px 0 0;font-size:.78rem;line-height:1.6;opacity:.85}.upsell-toast{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;box-sizing:border-box;width:min(520px,calc(100% - 24px));padding:14px 56px 14px 16px;border-radius:12px;background:#fff;color:#222;border:1px solid #c9c2d6;box-shadow:0 6px 24px rgba(0,0,0,.18);font-size:.88rem;line-height:1.6}.upsell-toast p{margin:0 0 6px;font-weight:bold}.upsell-toast ul{margin:0 0 10px;padding-left:1.2em}.upsell-toast li{margin:2px 0}.upsell-toast .upsell-go{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:8px;background:#c9283e;color:#fff;font-weight:bold;text-decoration:none}.upsell-toast .upsell-go:focus-visible,.upsell-toast .upsell-x:focus-visible{outline:3px solid #2560c4;outline-offset:2px}.upsell-toast .upsell-x{position:absolute;top:4px;right:4px;width:44px;height:44px;border:0;border-radius:8px;background:transparent;color:#555;font-size:1.3rem;line-height:1;cursor:pointer}@media print{.upsell-top,.upsell-assure,.upsell-terms,.upsell-toast{display:none!important}}</style><!--UPSELL_CSS_END-->
+<!--UPSELL_CSS_START--><style>.upsell-top{box-sizing:border-box;width:min(var(--anshin-w,880px),calc(100% - 2 * var(--anshin-pad,16px)));margin:12px auto 0;font-size:.85rem;line-height:1.6}.upsell-top a{color:inherit}.upsell-assure{list-style:none;margin:12px 0 10px;padding:0;display:flex;flex-wrap:wrap;gap:6px 8px;font-size:.8rem;line-height:1.5}.upsell-assure li{padding:3px 10px;border:1px solid rgba(20,120,90,.45);border-radius:12px;background:rgba(20,120,90,.06)}.upsell-terms{margin:8px 0 0;font-size:.78rem;line-height:1.6;opacity:.85}.upsell-toast{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);z-index:9999;box-sizing:border-box;width:min(520px,calc(100% - 24px));padding:14px 56px 14px 16px;border-radius:12px;background:#fff;color:#222;border:1px solid #c9c2d6;box-shadow:0 6px 24px rgba(0,0,0,.18);font-size:.88rem;line-height:1.6}.upsell-toast p{margin:0 0 6px;font-weight:bold}.upsell-toast ul{margin:0 0 10px;padding-left:1.2em}.upsell-toast li{margin:2px 0}.upsell-toast .upsell-note{display:block;margin-top:6px;font-size:.75rem;color:#555}.upsell-toast .upsell-go{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:8px;background:#c9283e;color:#fff;font-weight:bold;text-decoration:none}.upsell-toast .upsell-go:focus-visible,.upsell-toast .upsell-x:focus-visible{outline:3px solid #2560c4;outline-offset:2px}.upsell-toast .upsell-x{position:absolute;top:4px;right:4px;width:44px;height:44px;border:0;border-radius:8px;background:transparent;color:#555;font-size:1.3rem;line-height:1;cursor:pointer}.upsell-inline{white-space:nowrap;color:inherit;text-decoration:underline;text-underline-offset:2px}@media print{.upsell-top,.upsell-assure,.upsell-terms,.upsell-toast,.upsell-inline{display:none!important}}</style><!--UPSELL_CSS_END-->
 </head>
 <body>
 
@@ -823,8 +823,8 @@
   "use strict";
   var q = new URLSearchParams(location.search);
   if (q.get("obs") === "1" || document.documentElement.classList.contains("obs")) return;
-  // 買い切り版はパソコン向けなので、マウス操作の広い画面でだけ出す
-  if (!window.matchMedia || !matchMedia("(pointer:fine) and (min-width:720px)").matches) return;
+  // 小さな案内(トースト)は、買い切り版がパソコン向けなので、マウス操作の広い画面でだけ出す
+  var pc = !!(window.matchMedia && matchMedia("(pointer:fine) and (min-width:720px)").matches);
   var buy = document.getElementById("buyLink");
   var pro = document.getElementById("pro-section");
   if (!buy || !pro) return;
@@ -870,7 +870,7 @@
     return r.top < innerHeight && r.bottom > 0;
   }
   function show(trigger) {
-    if (blocked() || failed() || proVisible()) return;
+    if (!pc || blocked() || (trigger === "action" && failed()) || proVisible()) return;
     var list = feats();
     if (!list.length) return;
     shown = true;
@@ -881,7 +881,9 @@
     box.setAttribute("aria-live", "polite");
     document.body.appendChild(box);
     var p = document.createElement("p");
-    p.textContent = "うまくできましたか? パソコン用の買い切り版(¥100・税込)なら、さらに:";
+    p.textContent = trigger === "limit"
+      ? "この先は買い切り版の機能です。パソコン用の買い切り版(¥100・税込)なら:"
+      : "うまくできましたか? パソコン用の買い切り版(¥100・税込)なら、さらに:";
     var ul = document.createElement("ul");
     list.forEach(function (t) { var li = document.createElement("li"); li.textContent = t; ul.appendChild(li); });
     var a = document.createElement("a");
@@ -909,7 +911,10 @@
     a.addEventListener("click", function () { setTimeout(function () { close(false); }, 0); });
     document.addEventListener("keydown", onKey);
     setTimeout(function () {
-      box.appendChild(x); box.appendChild(p); box.appendChild(ul); box.appendChild(a);
+      var note = document.createElement("small");
+      note.className = "upsell-note";
+      note.textContent = "スマホではファイルを開けない機種があります";
+      box.appendChild(x); box.appendChild(p); box.appendChild(ul); box.appendChild(a); box.appendChild(note);
     }, 50);
     gtagEv("upsell_show", { trigger: trigger });
   }
@@ -924,6 +929,81 @@
     if (!OK.test(label) || NG.test(label)) return;
     setTimeout(function () { show("action"); }, 1500);
   }, true);
+
+  // 無料版の上限まわり
+  // (1) ページが出す「買い切り版」の一文に、購入欄へのリンクを足す(スマホでも)。🔒のタブは薄く表示されているので入れない
+  // (2) 案内(パソコンのみ)は、はっきりした合図のときだけ出す: 🔒のクリック・買い切り版にふれたalert・
+  //     初めて出た「〜まで/のみ/以降/入っていません」の上限の一文(計算のたびに出る誘導文や、同じ文の描き直しでは出さない)
+  var SKIP = "#pro-section, .upsell-toast, .upsell-top, #anshin, a, button, label, select, option, h1, h2, h3, .badge, header, footer, nav, textarea, pre, code, [contenteditable], svg";
+  var LIMIT = /まで|のみ|以降|入っていません/;
+  var seenText = {}, ready = false;
+  function goPro(e) {
+    if (e) e.preventDefault();
+    pro.setAttribute("tabindex", "-1");
+    pro.scrollIntoView({ behavior: "smooth", block: "start" });
+    pro.focus({ preventScroll: true });
+  }
+  function linkify(root, deep) {
+    var limitHit = false;
+    var els = root.matches("p, div, span, li") ? [root] : [];
+    if (deep) els = els.concat([].slice.call(root.querySelectorAll("p, div, span, li")));
+    els.forEach(function (el) {
+      if (el.closest(SKIP) || el.closest('[role="radio"], [role="option"], [role="tab"], [role="button"], [tabindex]:not([tabindex="-1"])') || el.querySelector("a, button, p, div, li, input, label")) return;
+      // 選択肢の「○○(買い切り版)」ではなく、文として買い切り版にふれている要素だけ
+      var own = "";
+      for (var n = el.firstChild; n; n = n.nodeType === 1 && n.className === "upsell-inline" ? null : n.nextSibling) if (n.nodeType === 3) own += n.nodeValue;
+      own = own.trim();
+      if (own.indexOf("買い切り版") < 0 || /[((]買い切り版[))]$/.test(own) || /^🔒/.test(own)) return;
+      var key = own.replace(/\d+/g, "#");
+      if (ready && !seenText[key] && LIMIT.test(own) && !el.closest(".teaser, #teaser, [id$=teaser], #tz")) limitHit = true;
+      seenText[key] = 1;
+      if (el.querySelector(".upsell-inline")) return;
+      var a = document.createElement("a");
+      a.className = "upsell-inline";
+      a.href = "#pro-section";
+      a.setAttribute("aria-label", "くわしく:買い切り版の説明へ移動");
+      a.textContent = "くわしく";
+      var ar = document.createElement("span");
+      ar.setAttribute("aria-hidden", "true");
+      ar.textContent = " ↓";
+      a.appendChild(ar);
+      a.addEventListener("click", goPro);
+      el.appendChild(document.createTextNode(" "));
+      el.appendChild(a);
+    });
+    return limitHit;
+  }
+  linkify(document.body, true);
+  setTimeout(function () { ready = true; }, 1500);
+  var topLink = document.querySelector("#upsellTop a");
+  if (topLink) topLink.addEventListener("click", goPro);
+  new MutationObserver(function (ms) {
+    // 変わったところだけを調べる(足された要素はその中も、文字の変更は親要素だけ)
+    var hit = false, done = new Set();
+    function check(t, deep) {
+      if (!t || t.nodeType !== 1 || done.has(t) || t.closest(".upsell-toast")) return;
+      done.add(t);
+      if (linkify(t, deep)) hit = true;
+    }
+    ms.forEach(function (m) {
+      if (m.type === "characterData") { check(m.target.parentNode, false); return; }
+      check(m.target, false);
+      for (var i = 0; i < m.addedNodes.length; i++) if (m.addedNodes[i].nodeType === 1) check(m.addedNodes[i], true);
+    });
+    if (hit) setTimeout(function () { show("limit"); }, 800);
+  }).observe(document.body, { childList: true, subtree: true, characterData: true });
+  document.addEventListener("click", function (e) {
+    var el = e.target && e.target.closest ? e.target.closest("button, div, span, li") : null;
+    var first = el && el.firstChild && el.firstChild.nodeType === 3 ? el.firstChild.nodeValue : "";
+    if (!/^\s*🔒/.test(first) || e.target.closest("#pro-section")) return;
+    if (pc) setTimeout(function () { show("limit"); }, 300); else goPro();
+  }, true);
+  var origAlert = window.alert;
+  window.alert = function (msg) {
+    var r = origAlert.apply(window, arguments);
+    if (/買い切り版/.test(String(msg))) setTimeout(function () { show("limit"); }, 300);
+    return r;
+  };
 })();
 </script>
 <!--UPSELL_JS_END-->
